@@ -108,3 +108,18 @@
     cursor: pointer;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 480px) {
+    .searchItem {
+        // flex-wrap: wrap;
+
+        flex-direction: column;
+
+        &>img {
+            width: auto;
+            height: auto;
+        }
+
+        // height: 100%;
+    }
+}

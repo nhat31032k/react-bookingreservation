@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
-import Home from "./pages/Home/Home";
+import Home from "./pages/home/Home";
 import logo from "./logo.svg";
 import List from "./pages/list/List";
 import Hotel from "./pages/hotel/Hotel";
