@@ -32,6 +32,10 @@
         border: none;
         margin-left: 20px;
         color: #003580;
+        // text-decoration:none ;
+        &_link{
+            text-decoration:none ;
+        }
     }
 }
 

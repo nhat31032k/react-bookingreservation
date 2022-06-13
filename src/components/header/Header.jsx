@@ -14,7 +14,7 @@ import { DateRange } from "react-date-range";
 import { useState } from "react";
 import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 // chuyển ngày thành kiểu chuổi
 import { format } from "date-fns";
 const Header = ({ type }) => {
@@ -85,7 +85,17 @@ const Header = ({ type }) => {
               Nhận phần thưởng cho chuyến du lịch của bạn - mở khóa khoản tiết
               kiệm tức thì từ 10% trở lên với tài khoản Sunnybooking miễn phí
             </p>
-            <button className="headerButton">Đăng nhập / Đăng kí</button>
+            <button className="headerButton">
+              {/* click vào đăng nhập thì chuyan63 sang đăng nhập đăng ký thì chuyển sang đăng ký  */}
+              <Link className="headerLink" to="/login">
+                Đăng nhập
+              </Link>
+              <span> / </span>
+              <Link className="headerLink" to="/register">
+                Đăng ký
+              </Link>
+              {/* Đăng nhập / Đăng kí */}
+            </button>
             <div className="headerSearch">
               <div className="headerSearchItem">
                 <FontAwesomeIcon icon={faBed} className="headerIcon" />

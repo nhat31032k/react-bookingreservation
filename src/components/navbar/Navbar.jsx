@@ -1,6 +1,7 @@
 import "./navbar.scss";
-import { useNavigate } from "react-router-dom";
-
+import { useNavigate, Link } from "react-router-dom";
+// import Login from "../../pages/login/Login";
+// import Login from "../pages/login/Login";
 const Navbar = () => {
   const link = useNavigate();
   const handleClick = () => {
@@ -15,7 +16,14 @@ const Navbar = () => {
           Sunnybooking
         </span>
         <div className="navItems">
-          <button className="navButton">Đăng kí</button>
+          <button className="navButton">
+            <Link className="navButton_link" to="/login">
+              Đăng ký
+            </Link>
+          </button>
+          {/* <div>
+            <Link to={login}>Đăng ký</Link>
+          </div> */}
           <button className="navButton">Đăng nhập</button>
         </div>
       </div>
