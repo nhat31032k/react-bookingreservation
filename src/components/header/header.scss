@@ -70,7 +70,6 @@
             bottom: -25px;
             width: 100%;
             max-width: 1024px;
-
             .headerSearchItem {
                 display: flex;
                 align-items: center;
@@ -79,22 +78,18 @@
                 .date {
                     position: absolute;
                     top: 50px;
-                    z-index: 1;
+                    z-index: 99;
                 }
-
                 .headerSearchInput {
                     border: none;
                     outline: none;
                 }
-
                 .headerSearchText {
                     color: lightgrey;
                 }
-
                 .headerIcon {
                     color: lightgrey;
                 }
-
                 .options {
                     z-index: 3;
                     position: absolute;
@@ -119,9 +114,7 @@
                             align-items: center;
                             gap: 10px;
                             font-size: 12px;
-
                             color: black;
-
                             .optionCounterButton {
                                 @include size(30px, 30px);
                                 border: 1px solid #0071c2;
@@ -133,39 +126,53 @@
                                     cursor: not-allowed;
                                 }
                             }
-
                             .optionCounterNumber {}
                         }
-
                     }
                 }
-
-
-
-
             }
-
-
-
         }
-
-
     }
-
 }
 
 @media screen and (max-width: 480px) {
     .header {
-        width: 590px;
-
+        width: 630px;
+        // .headerWrap{
+        //     padding:0 8px 0 15px;
+        // }
         .headerList {
             justify-content: center;
+            align-items: center;
+            
         }
-
         .headerListItem {
             flex-direction: column;
-            // align-items: center;
-
+        }
+        .headerContainer{
+            padding:0 8px 0 10px;
+            .headerSearch{
+            // display: flex;
+                flex-direction: column;
+                width: 550px;
+                height: 300px;
+                transform: translate(5%, 70%);
+                // margin-bottom: 300px;
+                .headerSearchItem{
+                    width: 100%;
+                    justify-content: center;
+                    .date {              
+                        top: 130px;
+                        right: 100px;  
+                        z-index: 999;
+                        // margin-bottom: 3rem;  
+                    }
+                    .options{
+                        top: 200px;
+                        right: 130px;
+                    }
+                }
+        }
         }
     }
 }

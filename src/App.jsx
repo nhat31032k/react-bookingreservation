@@ -6,17 +6,17 @@ import List from "./pages/list/List";
 import Hotel from "./pages/hotel/Hotel";
 import Page404 from "./pages/page404/Page404";
 import Login from "./pages/login/Login";
+import Register from "./pages/register/Register";
 {
   /* import './App.css' */
 }
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register/>} />
         <Route path="/" element={<Home />} />
         <Route path="/hotels" element={<List />} />
         <Route path="/hotels/:id" element={<Hotel />} />

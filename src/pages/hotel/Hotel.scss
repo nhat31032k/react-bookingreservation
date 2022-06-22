@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    // padding: 20px;
 }
 
 .hotelWrapper {
@@ -114,6 +115,7 @@
 
 .slider {
     position: sticky;
+    -webkit-sticky: sticky;
     top: 0;
     left: 0;
     width: 100vw;
@@ -155,9 +157,11 @@
 
 @media screen and (max-width: 480px) {
     .hotelContainer {
-        width: 590px;
-
-        .hotelWrapper {}
+        width: 580px;
+        margin-left: 20px;
+        // .hotelWrapper {
+        //     flex-direction: column;
+        // }
 
         .mailInputContainer>input {
             width: 100%;
@@ -180,8 +184,17 @@
         }
     }
 
-    .footer {
+    .hotelDetails {
+        flex-direction: column;
+    }
+
+    .hotelDetailsPrice {
         width: 500px;
+        margin: auto;
+    }
+
+    .footer {
+        width: 600px;
     }
 
 

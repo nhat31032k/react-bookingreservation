@@ -9,12 +9,14 @@ const FeaturedProperties = () => {
           alt=""
           className="fpImg"
         />
-        <span className="fpName">Nobu Hotel London Portman Square</span>
-        <span className="fpCity"> Luân Đôn</span>
-        <span className="fpPrice">Gía từ VND 9.012.059</span>
-        <div className="fpRating">
-          <button>9.0</button>
-          <span>Tuyệt vời</span>
+        <div className="fpDesc">
+          <span className="fpName">Nobu Hotel London Portman Square</span>
+          <span className="fpCity"> Luân Đôn</span>
+          <span className="fpPrice">Gía từ VND 9.012.059</span>
+          <div className="fpRating">
+            <button>9.0</button>
+            <span>Tuyệt vời</span>
+          </div>
         </div>
       </div>
       <div className="fpItem">
@@ -23,12 +25,14 @@ const FeaturedProperties = () => {
           alt=""
           className="fpImg"
         />
-        <span className="fpName">One Hundred Shoreditch</span>
-        <span className="fpCity"> Luân Đôn</span>
-        <span className="fpPrice">Gía từ VND 9.012.059</span>
-        <div className="fpRating">
-          <button>9.0</button>
-          <span>Tuyệt vời</span>
+        <div className="fpDesc">
+          <span className="fpName">One Hundred Shoreditch</span>
+          <span className="fpCity"> Luân Đôn</span>
+          <span className="fpPrice">Gía từ VND 9.012.059</span>
+          <div className="fpRating">
+            <button>9.0</button>
+            <span>Tuyệt vời</span>
+          </div>
         </div>
       </div>
       <div className="fpItem">
@@ -37,12 +41,14 @@ const FeaturedProperties = () => {
           alt=""
           className="fpImg"
         />
-        <span className="fpName">Juzz Holiday Lets</span>
-        <span className="fpCity"> Luân Đôn</span>
-        <span className="fpPrice">Gía từ VND 9.012.059</span>
-        <div className="fpRating">
-          <button>9.0</button>
-          <span>Tuyệt vời</span>
+        <div className="fpDesc">
+          <span className="fpName">Juzz Holiday Lets</span>
+          <span className="fpCity"> Luân Đôn</span>
+          <span className="fpPrice">Gía từ VND 9.012.059</span>
+          <div className="fpRating">
+            <button>9.0</button>
+            <span>Tuyệt vời</span>
+          </div>
         </div>
       </div>
       <div className="fpItem">
@@ -51,14 +57,16 @@ const FeaturedProperties = () => {
           alt=""
           className="fpImg"
         />
-        <span className="fpName">
-          Montcalm Royal London House-City of London
-        </span>
-        <span className="fpCity"> Luân Đôn</span>
-        <span className="fpPrice">Gía từ VND 9.012.059</span>
-        <div className="fpRating">
-          <button>9.0</button>
-          <span>Tuyệt vời</span>
+        <div className="fpDesc">
+          <span className="fpName">
+            Montcalm Royal London House-City of London
+          </span>
+          <span className="fpCity"> Luân Đôn</span>
+          <span className="fpPrice">Gía từ VND 9.012.059</span>
+          <div className="fpRating">
+            <button>9.0</button>
+            <span>Tuyệt vời</span>
+          </div>
         </div>
       </div>
     </div>
