@@ -31,7 +31,7 @@
 }
 
 .mailV2 {
-    width: 98%;
+    width: 100%;
     margin-top: 50px;
     background-color: #003580;
     color: white;
@@ -65,7 +65,12 @@
 
 @media screen and (max-width: 480px) {
     .mail {
-        width: 620px;
-        transform: translateX(19%);
+        width: 800px;
+        transform: translateX(20%);
+    }
+
+    .mailV2 {
+        width: 800px;
+        transform: translateX(5%);
     }
 }

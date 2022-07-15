@@ -32,15 +32,16 @@
         border: none;
         margin-left: 20px;
         color: #003580;
+
         // text-decoration:none ;
-        &_link{
-            text-decoration:none ;
+        &_link {
+            text-decoration: none;
         }
     }
 }
 
 @media screen and (max-width: 480px) {
     .navbar {
-        width: 630px;
+        width: 750px;
     }
 }
